@@ -1,6 +1,6 @@
 local overrides = require "custom.plugins.overrides"
 
-return {
+local plugins = {
 
   -- ["goolord/alpha-nvim"] = { disable = false } -- enables dashboard
 
@@ -21,7 +21,7 @@ return {
     override_options = overrides.mason,
   },
 
-  ["kyazdani42/nvim-tree.lua"] = {
+  ["nvim-tree/nvim-tree.lua"] = {
     override_options = overrides.nvimtree,
   },
 
@@ -44,3 +44,5 @@ return {
   -- remove plugin
   -- ["hrsh7th/cmp-path"] = false,
 }
+
+return plugins
